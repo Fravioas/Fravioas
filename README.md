@@ -4,7 +4,8 @@ Olá! Eu sou o @Fravioas e estou empolgado em compartilhar meu trabalho e projet
 
 ## Sobre mim 👀
 
-- Nome: Flávio Vinícius Moura
+- Nome: Flávio Vinícius Moura de Carvalho
+- Idade: 27 anos
 - Interesses: Desenvolvimento web, mobile, games e automação
 
 ## O que estou aprendendo 🌱
