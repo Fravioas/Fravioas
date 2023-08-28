@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale:1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="./assets/images/favicon.svg" />
+        <meta name="theme-color" content="#0038FF" />
+        <title>Flávio Vinicius | Gallery</title>
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <nav>
+            <img src="./assets/image/logo.png" alt="logo" />
+            <ul class="nav-list">
+                <li><a href="index.html#about" onclick="closeNav()">Quem sou</a></li>
+                <li><a href="index.html#projects" onclick="closeNav()">Projetos</a></li>
+                <li><a href="#home" onclick="closeNav()">Galeria</a></li>
+                <li><a href="index.html#knowledge" onclick="closeNav()">Conhecimentos</a></li>
+                <li><a href="index.html#articles" onclick="closeNav()">Artigos</a></li>
+                <li><a href="index.html#contact" onclick="closeNav()">Contato</a></li>
+            </ul>
+            <button class="nav-button" onclick="openNav()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="close-button" onclick="closeNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </nav>
+        <section id="home">
+            <ul>
+                <li class="list active" data-filter="all">Todos</li>
+                <li class="list" data-filter="landing-page">Paginação Web</li>
+                <li class="list" data-filter="design">Jogos</li>
+                <li class="list" data-filter="clone-ui">Aplicação Mobile</li>
+                <li class="list" data-filter="web">Automatização</li>
+            </ul>
+            <div class="projects">
+
+
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/doingdev.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">App de TodoList integrado com Player de Lofi Music. Foi desenvolvido desde a concepção da UI/UX no Figma até a implementação em React e Firebase.</span>
+                            <h3 class="projects__title">Doing.dev</h3>
+                            <a target="_blank" href="https://doing-dev.vercel.app/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="app">
+                    <img src="./assets/images/rockethelp.svg" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">App desenvolvido em React Native e integrado ao Firebase para persistência de dados.</span>
+                            <h3 class="projects__title">Rocket Help</h3>
+                            <a target="_blank" href="https://github.com/FilipiRafael/rocket-help" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="app">
+                    <img src="./assets/images/cinema-next-1.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Aplicação web desenvolvida em Next.js, consumindo a API themoviedb.org.</span>
+                            <h3 class="projects__title">Cinema Next</h3>
+                            <a target="_blank" href="https://cinema-next.vercel.app/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="app">
+                    <img src="./assets/images/react-movies.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Listagem de filmes consumindo API themoviedb.org com design responsivo.</span>
+                            <h3 class="projects__title">React Movies</h3>
+                            <a target="_blank" href="https://themoviedb-reactjs-gallery.vercel.app" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="landing-page">
+                    <img src="./assets/images/optimustech.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Página de contratação para empresas de tecnologia. Projeto desenvolvido em HTML/CSS.</span>
+                            <h3 class="projects__title">Optimus Tech</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/optimusTech/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-7.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Challenge Design UI</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/frontendmentor-challenge/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-2.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Challenge Design UI</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/frontendmentor-huddle-landing-page/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-3.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Challenge Design UI</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/frontendmentor-preview-card/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-4.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Challenge Design UI</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/frontendmentor-challenge-stats-preview/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-5.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Challenge Design UI</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/frontendmentor-challenge-qrcode/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-6.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Challenge Design UI</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/frontend-mentor-challenge-nft/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="design">
+                    <img src="./assets/images/design-1.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">A ideia do projeto foi para aplicar, práticar e melhorar minhas habilidades técnicas em desenvolvimento web.</span>
+                            <h3 class="projects__title">Guia de turismo</h3>
+                            <a target="_blank" href="https://filipirafael.github.io/desert-website/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-2.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-3.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-4.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-5.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-6.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-7.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-8.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="itemBox" data-item="web">
+                    <img src="./assets/images/portfolio-jll-9.png" alt="project screeshot">
+                    <div class="projects__modal">
+                        <div>
+                            <span class="projects__subtitle">Trabalhei nesta interface como desenvolvedor Front-end utilizando ReactJS.</span>
+                            <h3 class="projects__title">JLL Portal</h3>
+                            <a target="_blank" href="https://www.jll.com.br/" class="projects__button">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <footer>
+            <h3>&copy; <span class="year-footer">2022</span> filipirafael.com</h3>
+        </footer>
+
+        <a class="top-button" href="#home">
+            <i class="fa-solid fa-circle-up"></i>
+        </a>
+        <script>
+            let list = document.querySelectorAll('.list');
+            let itemBox = document.querySelectorAll('.itemBox');
+
+            for (let i = 0; i < list.length; i++) {
+                list[i].addEventListener('click', () => {
+                    for (let j = 0; j < list.length; j++) {
+                        list[j].classList.remove('active');
+                    }
+                    list[i].classList.add('active');
+
+                    let dataFilter = list[i].getAttribute('data-filter');
+
+                    for (let k = 0; k < itemBox.length; k++) {
+                        itemBox[k].classList.remove('active');
+                        itemBox[k].classList.add('hide');
+
+                        const dataItemBox = itemBox[k].getAttribute('data-item');
+
+                        if (dataItemBox === dataFilter || dataFilter === 'all') {
+                            itemBox[k].classList.remove('hide');
+                            itemBox[k].classList.add('active');
+                        }
+                    }
+                })
+            }
+        </script>
+        <script src="https://kit.fontawesome.com/b9b6231623.js" crossorigin="anonymous"></script>
+        <script src="./assets/js/cursor.js" ></script>
+        <script src="./assets/js/mobile-navbar.js" ></script>
+    </body>
+</html> 
