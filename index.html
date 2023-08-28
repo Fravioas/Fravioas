@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon.svg" />
+    <meta name="theme-color" content="#0038FF" />
+    <title>Flávio Vinicius | FrontEnd developer</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+</head>
+<body>
+    <div class="cursor"></div>
+    <nav>
+        <img src="./assets/image/logo.png" alt="logo"/>
+        <ul class="nav-list">
+            <li><a href="#about" onclick="closeNav()">Quem sou</a></li>
+            <!--<li><a href="#projects" onclick="closeNav()">Projetos</a></li>-->
+            <li><a href="gallerya.html#home" onclick="closeNav()">Galeria</a></li>
+            <li><a href="#knowledge" onclick="closeNav()">Conhecimentos</a></li>
+            <!--<li><a href="#articles" onclick="closeNav()">Artigos</a></li>-->
+            <li><a href="#contact" onclick="closeNav()">Contato</a></li>
+        </ul>
+        <button class="nav-button" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <button class="close-button" onclick="closeNav()">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </nav>
+    <main>
+        <section id="home" class="container container__home">
+            <div class="informations">
+                <span>Olá, eu sou</span>
+                <h1>Flávio Vinicius.</h1>
+                <p>Formando em CC.</p>
+                <a href="./CV/Fravio.pdf" download="" target="_blank">
+                    Download CV
+                    <i class="fa-solid fa-angle-down"></i>
+                </a>
+            </div>
+            <div class="banner">
+                <img src="./assets/image/fravio.jpg" alt="icon photo" />
+            </div>
+        </section>
+
+        <section id="about" class="container container__about">
+            <div class="banner">
+                <img src="./assets/image/flavio.png" alt="avatar" />
+            </div>
+            <div class="informations">
+                <div>
+                    <h2>Quem sou</h2> <i class="fa-solid fa-user-astronaut"></i>
+                </div>
+                <span>
+                    Olá! Eu sou o @Fravioas e estou empolgado em compartilhar meu trabalho e projetos. Nesta paginação web, você encontrará alguns dos meus interesses e exercícios de aprendizagem relacionados ao desenvolvimento web, mobile, jogos e automação. Atualmente, estou focado em aprimorar minhas habilidades em C# para criar projetos emocionantes no Unity3D.
+                </span>
+            </div>
+        </section>
+<!--
+        <section id="projects" class="container container__projects">
+            <div class="title-projects">
+                <h2>Projetos</h2>
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <section class="container container__swiper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="content">
+                            <h2>01</h2>
+                            <h3>Doing Dev</h3>
+                            <p>App de TodoList integrado com Player de Music. Foi desenvolvido desde a UI/UX no Figma até a implementação em React e Firebase.</p>
+                            <a href="https://doing-dev.vercel.app/" target="_blank">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="content">
+                            <h2>02</h2>
+                            <h3>Aplicativo RocketHelp</h3>
+                            <p>App desenvolvido em React Native e integrado ao Firebase para persistência de dados.</p>
+                            <a href="https://github.com/FilipiRafael/rocket-help" target="_blank">Saiba mais</a>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                          <div class="content">
+                            <h2>03</h2>
+                            <h3>React Movies</h3>
+                            <p>Listagem de filmes via API Themoviedb.org com design responsivo.</p>
+                            <a href="http://themoviedb-reactjs-gallery.vercel.app/" target="_blank">Saiba mais</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+        </section>
+-->
+
+        <section id="knowledge" class="container container__knowledge">
+            <div class="title-knowledge">
+                <h2>Conhecimentos</h2>
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div class="wrapper-knowledge">
+                <div class="stack-wrapper">
+                    <ul>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>HTML</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>CSS</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Javascript</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Typescript</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Git</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Node Js</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>React</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Figma</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Sass</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>SQL</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>React Native</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Docker</h3>
+                            </div>
+                            <span>Básico</span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>jQuery</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Bootstrap</h3>
+                            </div>
+                            <span>Avançado</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>Firebase</h3>
+                            </div>
+                            <span>Intermediário</span>
+                        </li>
+                        <li>
+                            <div class="header-stack">
+                                <i class="fa-regular fa-circle-check"></i>
+                                <h3>GraphQL</h3>
+                            </div>
+                            <span>Básico</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+        <!--
+            <section id="articles" class="container container__articles">
+                <div class="title-articles">
+                    <h2>Artigos</h2>
+                    <i class="fa-solid fa-newspaper"></i>
+                </div>
+                <div class="wrapper">
+                    <div class="card">
+                        <div class="content">
+                            <h2>01</h2>
+                            <h3>Começando em FrontEnd</h3>
+                            <p>Estou escrevendo este artigo para ajudar alguns colegas, que estão começando na área de Front End.</p>
+                            <a href="https://medium.com/@filipirafael.123/o-que-estudar-para-aprender-frontend-85dc8cbc900f" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>02</h2>
+                            <h3>Em breve</h3>
+                            <p>Pegue o café e espere um pouco, estou escrevendo o artigo.</p>
+                            <a href="https://github.com/filipirafael" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>03</h2>
+                            <h3>Em breve</h3>
+                            <p>Pegue o café e espere um pouco, estou escrevendo o artigo.</p>
+                            <a href="https://github.com/filipirafael" target="_blank">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <section class="container container__channel">
+                <div class="title-channel">
+                    <h2>Canal Youtube</h2>
+                    <i class="fa-solid fa-laptop-code"></i>
+                </div>
+                <div class="content-channel">
+                    <iframe
+                        width="560" height="315" src="https://www.youtube.com/embed/qdbIErGDHzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+        -->
+
+        <section id="contact" class="container container__contact">
+            <div class="title-contact">
+                <h2>Contato</h2>
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="container-form">
+                <form action="https://formsubmit.co/filipirafael.123@gmail.com" method="POST">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required />
+
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Mensagem</label>
+                    <textarea type="text" name="message" id="message" rows="6" cols="54" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>&copy; <span class="year-footer">2023</span> </h3>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/fl%C3%A1vio-vinicius-moura-a792b9196/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+            <li><a href="https://github.com/Fravioas/" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+            <li><a href="https://www.instagram.com/fravioas/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+        </ul>    
+    </footer>
+
+    <script src="./assets/js/get-actual-year.js"></script>
+    <script src="./assets/js/mobile-navbar.js"></script>
+    <script src="https://kit.fontawesome.com/b9b6231623.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/vanilla-tilt.js"></script>
+    <script src="./assets/js/cursor.js"></script>
+    <script>
+            VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 1,
+	    });
+    </script>
+    <!-- Swiper JS -->
+    
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+
+    <a class="top-button" href="#home">
+        <i class="fa-solid fa-circle-up"></i>
+    </a>
+</body>
+</html>
